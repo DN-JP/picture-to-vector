@@ -1,0 +1,50 @@
+.page {
+
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  min-block-size: 5vh;
+  background-color: #222843;
+}
+
+.logo {
+  inline-size: 30px;
+}
+
+.header__navbar {
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar-links__list {
+  display: flex;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+.navbar__button {
+  padding: 0.3em;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 0.5rem;
+  box-shadow: 2px 4px 4px black;
+}
+
+.navbar-links__link {
+  color: #fff;
+  background-color: #2E3866;
+}
+
+.main {
+  min-block-size: 90vh;
+  background-color: #2C0F36;
+}
+
+.footer {
+  min-block-size: 5vh;
+  background-color: #222843;
+}
