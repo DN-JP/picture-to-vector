@@ -1,20 +1,28 @@
-@import "./globals", "./fonts", "./variables", "./mixins";
+@import "./_globals", "./_fonts", "./_variables", "./_mixins", "./_utils", "./_media";
 
 .page {
-
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: var(--white-color);
+  background-color: var(--primary-color);
 }
 
-.header {
+.header__inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem;
-  min-block-size: 5vh;
   background-color: #222843;
 }
 
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
-  inline-size: 30px;
+  inline-size: 40px;
+  justify-self: center;
 }
 
 .header__navbar {
@@ -42,11 +50,12 @@
 }
 
 .main {
-  min-block-size: 90vh;
+  min-block-size: 200px;
   background-color: #2C0F36;
 }
 
 .footer {
-  min-block-size: 5vh;
+  margin-top: auto;
+  min-block-size: 40px;
   background-color: #222843;
 }

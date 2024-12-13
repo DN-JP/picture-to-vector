@@ -7,20 +7,29 @@
   <title>Picture to vector</title>
 </head>
 <body class="page">
-  <div class="header">
-    <a class="header__logo" href=""><img class="logo" src="./images/icons/gallery-image-pic-svgrepo-com.svg" alt="logo"></a>
-    <div class="header__navbar">
-      <div class="header__navbar-links">
-        <ul class="navbar-links__list">
-          <li class="navbar-links__item"><a class="navbar-links__link navbar__button" href="#">Home</a></li>
-          <li class="navbar-links__item"><a class="navbar-links__link navbar__button" href="#">About us</a></li>
-          <li class="navbar-links__item"><a class="navbar-links__link navbar__button" href="#">Support us</a></li>
-        </ul>
-      </div>
-      <div class="header__navbar-auth"></div>
-    </div>
-  </div>
+  <header class="header">
+    <div class="header__inner container">
+      <a class="header__logo" href=""><img class="logo" src="./images/icons/gallery-image-pic-svgrepo-com.svg" alt="logo"></a>
+      <nav class="header__navbar">
+        <div class="header__navbar-links">
+          <ul class="navbar-links__list">
+            <li class="navbar-links__item"><a class="navbar-links__link navbar__button" href="#">Home</a></li>
+            <li class="navbar-links__item"><a class="navbar-links__link navbar__button" href="#">About us</a></li>
+            <li class="navbar-links__item"><a class="navbar-links__link navbar__button" href="#">Support us</a></li>
+          </ul>
+        </div>
+        <div class="header__navbar-auth"></div>
+      </nav>
+      <button 
+      class="button__burger-menu burger-button visible-mobile"
+      type="button"
+      >
+        <span class="visally-hidden">Open navigation menu</span>
+      </button>
+    </div>  
+  </header>
   <div class="main"></div>
   <div class="footer"></div>
+  <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">MENU</dialog>
 </body>
 </html>
