@@ -1,61 +1,23 @@
-@import "./_globals", "./_fonts", "./_variables", "./_mixins", "./_utils", "./_media";
+@import "./_globals", "./_variables", "./_mixins", "./_utils", "./_media";
+@import "./blocks/_header";
 
 .page {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  font-size: 18px;
+  font-family: var(--font-family-base);
   color: var(--white-color);
   background-color: var(--primary-color);
 }
 
-.header__inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #222843;
-}
-
-.header__logo {
-  display: flex;
-  align-items: center;
-}
-
-.logo {
-  inline-size: 40px;
-  justify-self: center;
-}
-
-.header__navbar {
-  display: flex;
-  gap: 1rem;
-}
-
-.navbar-links__list {
-  display: flex;
-  gap: 0.5rem;
-  list-style: none;
-}
-
-.navbar__button {
-  padding: 0.3em;
-  text-decoration: none;
-  text-align: center;
-  border-radius: 0.5rem;
-  box-shadow: 2px 4px 4px black;
-}
-
-.navbar-links__link {
-  color: #fff;
-  background-color: #2E3866;
-}
-
 .main {
   min-block-size: 200px;
-  background-color: #2C0F36;
+  background-color: var(--section-color);
 }
 
 .footer {
   margin-top: auto;
   min-block-size: 40px;
-  background-color: #222843;
+  background-color: var(--section-color);
 }

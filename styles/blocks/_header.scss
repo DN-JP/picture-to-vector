@@ -1,0 +1,51 @@
+@import "../variables";
+
+.header {
+  padding: 40px 20px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--section-color);
+    border-radius: var(--border-radius-large);
+  }
+
+  &__menu {
+    font-size: 20px;
+
+    &-list {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+    }
+
+    &-link {
+      color: #fff;
+      background-color: var(--accent-color);
+      transition: background-color 0.3s ease-in-out;
+
+      @include hover {
+        background-color: var(--hover-color);
+      }
+    }
+  }
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  inline-size: 40px;
+  justify-self: center;
+}
+
+.navbar__button {
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 2px 4px 4px black;
+}
