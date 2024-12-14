@@ -1,7 +1,11 @@
 @import "../variables";
 
 .header {
-  padding: 40px 20px;
+  padding: 30px 20px;
+
+  @include mobile {
+    padding-top: 15px;
+  }
 
   &__inner {
     display: flex;

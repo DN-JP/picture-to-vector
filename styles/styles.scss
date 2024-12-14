@@ -1,5 +1,5 @@
 @import "./_globals", "./_variables", "./_mixins", "./_utils", "./_media";
-@import "./blocks/_header";
+@import "./blocks/_burger-button", "./blocks/_header", "./blocks/_cross-button", "./blocks/_mobile-overlay";
 
 .page {
   min-height: 100vh;
