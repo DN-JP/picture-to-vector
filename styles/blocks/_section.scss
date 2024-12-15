@@ -1,0 +1,7 @@
+.section {
+  min-block-size: 100px;
+  min-inline-size: 200px;
+  background-color: var(--section-color);
+  padding-block: var(--section-padding-y);
+  border-radius: var(--border-radius-large);
+}

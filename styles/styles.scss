@@ -1,5 +1,5 @@
 @import "./_globals", "./_variables", "./_mixins", "./_utils", "./_media";
-@import "./blocks/_burger-button", "./blocks/_header", "./blocks/_cross-button", "./blocks/_mobile-overlay";
+@import "./blocks/_burger-button", "./blocks/_header", "./blocks/_cross-button", "./blocks/_mobile-overlay", "./blocks/_section", "./blocks/_hero", "./blocks/_footer";
 
 .page {
   min-height: 100vh;
@@ -11,13 +11,7 @@
   background-color: var(--primary-color);
 }
 
-.main {
-  min-block-size: 200px;
-  background-color: var(--section-color);
+.content {
+  padding: 30px 20px;
 }
 
-.footer {
-  margin-top: auto;
-  min-block-size: 40px;
-  background-color: var(--section-color);
-}
