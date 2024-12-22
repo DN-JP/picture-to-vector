@@ -23,16 +23,6 @@
       gap: 20px;
       list-style: none;
     }
-
-    &-link {
-      color: #fff;
-      background-color: var(--accent-color);
-      transition: background-color 0.3s ease-in-out;
-
-      @include hover {
-        background-color: var(--hover-color);
-      }
-    }
   }
 }
 
@@ -41,15 +31,8 @@
   align-items: center;
 }
 
-.logo {
-  inline-size: 40px;
+.logo__img {
   justify-self: center;
 }
 
-.navbar__button {
-  padding: 10px;
-  text-decoration: none;
-  text-align: center;
-  border-radius: 10px;
-  box-shadow: 2px 4px 4px black;
-}
+

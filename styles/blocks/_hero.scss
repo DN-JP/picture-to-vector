@@ -1,3 +1,5 @@
+@import "../mixins", "../_variables";
+
 .hero {
   display: flex;
   flex-direction: column;
@@ -12,12 +14,13 @@
     text-align: center;
 
     &-title {
-      font-size: 48px; 
+      @include fluid-text(48, 24); 
       font-weight: 600;
     }
 
     &-description {
-      font-size: 18px;
+      color: var(--light-gray-color);
+      @include fluid-text(18, 12);
     }
   }
 

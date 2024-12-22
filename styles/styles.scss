@@ -1,17 +1,5 @@
-@import "./_normalize", "./_variables", "./_mixins", "./_utils", "./_media";
+@import  "./_mixins", "./_normalize", "./_globals", "./_variables", "./_utils", "./_media";
 @import "./blocks/_burger-button", "./blocks/_header", "./blocks/_cross-button", "./blocks/_mobile-overlay", "./blocks/_section", "./blocks/_hero", "./blocks/_footer";
 
-.page {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  font-size: 18px;
-  font-family: var(--font-family-base);
-  color: var(--white-color);
-  background-color: var(--primary-color);
-}
 
-.content {
-  padding: 30px 20px;
-}
 
