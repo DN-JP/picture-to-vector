@@ -14,7 +14,7 @@
     text-align: center;
 
     &-title {
-      @include fluid-text(48, 24); 
+      @include fluid-text(48, 24);
       font-weight: 600;
     }
 
@@ -25,20 +25,29 @@
   }
 
   &__partner {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     padding: 20px 40px;
 
     &-dropbox {
       display: flex;
       justify-content: center;
       align-items: center;
-      min-block-size: 200px;
+      min-block-size: 100px;
       border: var(--border-dashed);
+      border-radius: var(--border-radius-small);
 
       &-text {
         font-size: 18px;
         text-align: center;
-        color: var(--light-gray-color);        
+        color: var(--light-gray-color);
       }
+    }
+
+    &__pic-upload {
+      display: flex;
+      justify-content: center;
     }
   }
 }

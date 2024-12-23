@@ -1,13 +1,19 @@
 @import "./_media", "./_variables";
 
+html {
+  scrollbar-gutter: auto; 
+}
+
 .page {
-  min-height: 100vh;
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   font-size: 18px;
   font-family: var(--font-family-base);
   color: var(--white-color);
-  background-color: var(--primary-color);
+  background: linear-gradient(180deg, rgb(2, 0, 40) 0%, rgb(27, 27, 76) 50%, rgb(37, 7, 49) 100%);
 }
 
 .content {
@@ -19,6 +25,7 @@
 }
 
 .navbar__button {
+  width: 100%;
   padding: 10px;
   text-decoration: none;
   text-align: center;
