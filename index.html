@@ -49,9 +49,10 @@
             <h2 class="hero__main-description">Here you can easily upload your image to convert it to the vector image!</h2>
           </div>
           <div class="hero__partner">
-            <label for="" class="hero__partner__input">
+            <label for="input-image" class="hero__partner__input">
+              <input type="file" accept="image/*" id="input-image">
               <div class="hero__partner__input-dropbox" ondrop="drop(event)" ondragover="allowDrop(event)">
-                <img src="./images/icons/upload-icon.svg" alt="image upload icon">
+                <img src="./images/icons/upload-icon.svg" alt="image upload icon" class="hero__partner__input-dropbox-icon">
                 <p class="hero__partner__input-dropbox-text">Drop your img here or click<br> to choose the file...</p>
               </div>
             </label>
@@ -91,5 +92,6 @@
       </ul>
     </div>
   </dialog>
+  <script src="./scripts/main.js"></script>
 </body>
 </html>
