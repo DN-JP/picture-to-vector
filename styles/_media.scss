@@ -42,6 +42,12 @@ $s-mobile: 480px;
   }
 }
 
+@mixin s-mobile {
+  @media (width <= $s-mobile) {
+    @content;
+  }
+}
+
 @mixin hover {
   @media (hover: hover) {
     &:hover {
